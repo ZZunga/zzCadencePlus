@@ -1,0 +1,37 @@
+[Title]
+zzCadencePlus - Cadence, Avg, Max, Lap
+
+[Description]
+A cadence data field with big, easy-to-read digits. Shows your current cadence together with a second value of your choice, and colors it when you are above or below your average.
+Built with the TitilliumWeb font for better readability on the move.
+A rebuilt version of zzCadence.
+
+- Needs a cadence sensor.
+
+[Second value]
+- Average cadence
+- Max cadence
+- Lap average (calculated in the app, coasting at 0 rpm is left out, resets on lap)
+- None
+
+[Colors]
+- Current cadence changes color when it is more than 5% above or below the average (or the lap average in lap mode).
+- Pick separate colors for high and low, for day and night.
+- The background follows your device setting (white or black).
+
+[Layouts, picked automatically]
+- One slot of the 10-field layout: cadence icon and second value on top, large current cadence below.
+- Wide slots: zzCadencePlus title with the active mode (AVG / MAX / LAP) on top, both values side by side at the same size below.
+- Same typeface, sizes and layout as the other Plus data fields, so they look consistent side by side.
+
+[Supported devices]
+Edge 540 / 550 / 840 / 850 / 1040 / 1050 / 1060
+
+Change settings in the Garmin Connect IQ app or Garmin Express.
+
+[What's new]
+v1.0.2
+- New background setting (match device screen / plain black-white / transparent)
+- Fixed a white background being painted when the device reports a transparent background
+v1.0.1
+- First release

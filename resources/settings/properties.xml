@@ -1,0 +1,10 @@
+<properties>
+    <property id="appVersion" type="string">1.0.2</property>
+    <property id="mode" type="number">1</property>
+    <property id="dayHighColor" type="number">1</property>
+    <property id="dayLowColor" type="number">8</property>
+    <property id="nightHighColor" type="number">2</property>
+    <property id="nightLowColor" type="number">7</property>
+    <!-- 배경색: 0=기기 화면색에 맞춤 1=검정/흰색 그대로(기본) 2=투명(안 칠함) -->
+    <property id="bgMode" type="number">1</property>
+</properties>

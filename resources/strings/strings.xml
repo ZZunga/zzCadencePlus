@@ -1,0 +1,27 @@
+<strings>
+    <string id="AppName">zzCadencePlus</string>
+    <string id="ModeTitle">Second value</string>
+    <string id="Mode0">Cadence only</string>
+    <string id="Mode1">Average</string>
+    <string id="Mode2">Max</string>
+    <string id="Mode3">Lap average</string>
+    <string id="DayHighTitle">Day: above avg by 5%+</string>
+    <string id="DayLowTitle">Day: below avg by 5%+</string>
+    <string id="NightHighTitle">Night: above avg by 5%+</string>
+    <string id="NightLowTitle">Night: below avg by 5%+</string>
+    <string id="Color0">Default (no color)</string>
+    <string id="Color1">Red</string>
+    <string id="Color2">Pink</string>
+    <string id="Color3">Magenta</string>
+    <string id="Color4">Orange</string>
+    <string id="Color5">Yellow</string>
+    <string id="Color6">Green</string>
+    <string id="Color7">Blue</string>
+    <string id="Color8">Dark blue</string>
+    <string id="Color9">Purple</string>
+    <string id="VersionTitle">App version</string>
+    <string id="bgMode_title">Background</string>
+    <string id="bgAuto">Match device screen</string>
+    <string id="bgPlain">Plain black / white (default)</string>
+    <string id="bgClear">Transparent (no fill)</string>
+</strings>

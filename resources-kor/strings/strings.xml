@@ -1,0 +1,27 @@
+<strings>
+    <string id="AppName">zzCadencePlus</string>
+    <string id="ModeTitle">두 번째 값</string>
+    <string id="Mode0">케이던스만</string>
+    <string id="Mode1">평균 케이던스</string>
+    <string id="Mode2">최대 케이던스</string>
+    <string id="Mode3">Lap 평균 케이던스</string>
+    <string id="DayHighTitle">주간: 평균보다 5% 이상 높을 때</string>
+    <string id="DayLowTitle">주간: 평균보다 5% 이상 낮을 때</string>
+    <string id="NightHighTitle">야간: 평균보다 5% 이상 높을 때</string>
+    <string id="NightLowTitle">야간: 평균보다 5% 이상 낮을 때</string>
+    <string id="Color0">기본 글자색 (색 없음)</string>
+    <string id="Color1">빨강</string>
+    <string id="Color2">핑크</string>
+    <string id="Color3">자홍</string>
+    <string id="Color4">주황</string>
+    <string id="Color5">노랑</string>
+    <string id="Color6">초록</string>
+    <string id="Color7">파랑</string>
+    <string id="Color8">진한 파랑</string>
+    <string id="Color9">보라</string>
+    <string id="VersionTitle">버전 정보</string>
+    <string id="bgMode_title">배경색</string>
+    <string id="bgAuto">기기 화면색에 맞춤</string>
+    <string id="bgPlain">검정 / 흰색 그대로 (기본)</string>
+    <string id="bgClear">투명 (칠하지 않음)</string>
+</strings>

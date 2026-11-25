@@ -1,0 +1,76 @@
+<settings>
+    <setting propertyKey="@Properties.appVersion" title="@Strings.VersionTitle">
+        <settingConfig type="alphaNumeric" readonly="true"/>
+    </setting>
+    <setting propertyKey="@Properties.mode" title="@Strings.ModeTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Mode0</listEntry>
+            <listEntry value="1">@Strings.Mode1</listEntry>
+            <listEntry value="2">@Strings.Mode2</listEntry>
+            <listEntry value="3">@Strings.Mode3</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.dayHighColor" title="@Strings.DayHighTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Color0</listEntry>
+            <listEntry value="1">@Strings.Color1</listEntry>
+            <listEntry value="2">@Strings.Color2</listEntry>
+            <listEntry value="3">@Strings.Color3</listEntry>
+            <listEntry value="4">@Strings.Color4</listEntry>
+            <listEntry value="5">@Strings.Color5</listEntry>
+            <listEntry value="6">@Strings.Color6</listEntry>
+            <listEntry value="7">@Strings.Color7</listEntry>
+            <listEntry value="8">@Strings.Color8</listEntry>
+            <listEntry value="9">@Strings.Color9</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.dayLowColor" title="@Strings.DayLowTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Color0</listEntry>
+            <listEntry value="1">@Strings.Color1</listEntry>
+            <listEntry value="2">@Strings.Color2</listEntry>
+            <listEntry value="3">@Strings.Color3</listEntry>
+            <listEntry value="4">@Strings.Color4</listEntry>
+            <listEntry value="5">@Strings.Color5</listEntry>
+            <listEntry value="6">@Strings.Color6</listEntry>
+            <listEntry value="7">@Strings.Color7</listEntry>
+            <listEntry value="8">@Strings.Color8</listEntry>
+            <listEntry value="9">@Strings.Color9</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.nightHighColor" title="@Strings.NightHighTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Color0</listEntry>
+            <listEntry value="1">@Strings.Color1</listEntry>
+            <listEntry value="2">@Strings.Color2</listEntry>
+            <listEntry value="3">@Strings.Color3</listEntry>
+            <listEntry value="4">@Strings.Color4</listEntry>
+            <listEntry value="5">@Strings.Color5</listEntry>
+            <listEntry value="6">@Strings.Color6</listEntry>
+            <listEntry value="7">@Strings.Color7</listEntry>
+            <listEntry value="8">@Strings.Color8</listEntry>
+            <listEntry value="9">@Strings.Color9</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.nightLowColor" title="@Strings.NightLowTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Color0</listEntry>
+            <listEntry value="1">@Strings.Color1</listEntry>
+            <listEntry value="2">@Strings.Color2</listEntry>
+            <listEntry value="3">@Strings.Color3</listEntry>
+            <listEntry value="4">@Strings.Color4</listEntry>
+            <listEntry value="5">@Strings.Color5</listEntry>
+            <listEntry value="6">@Strings.Color6</listEntry>
+            <listEntry value="7">@Strings.Color7</listEntry>
+            <listEntry value="8">@Strings.Color8</listEntry>
+            <listEntry value="9">@Strings.Color9</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.bgMode" title="@Strings.bgMode_title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.bgAuto</listEntry>
+            <listEntry value="1">@Strings.bgPlain</listEntry>
+            <listEntry value="2">@Strings.bgClear</listEntry>
+        </settingConfig>
+    </setting>
+</settings>
