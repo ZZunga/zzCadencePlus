@@ -13,7 +13,7 @@ typedef Font as WatchUi.FontResource or Graphics.FontDefinition;
 //  - 현재 케이던스 색상: 기준보다 5% 넘게 높으면 '높을 때 색', 낮으면 '낮을 때 색' (주간/야간 따로)
 //  - 글자 크기는 zzSpeedPlus와 동일
 // 배터리: 판단·좌표·폰트는 onLayout에서 한 번, compute는 값이 바뀔 때만 문자열 생성, onUpdate는 그리기만.
-// APP_VERSION 1.0.1
+// APP_VERSION 1.0.3
 class zzCadencePlusView extends WatchUi.DataField {
 
     enum { MODE_CAD, MODE_AVG, MODE_MAX, MODE_LAP }
@@ -38,6 +38,8 @@ class zzCadencePlusView extends WatchUi.DataField {
 
     // ---- 레이아웃 ----
     private var _wide as Boolean = false;
+    // 1050 / 1060 (화면폭 480 이상). onUpdate 에서 매번 묻지 않는다
+    private var _big as Boolean = false;
     private var _titleOn as Boolean = true;
     private var _L as Number = 0, _T as Number = 0, _R as Number = 0, _B as Number = 0;
     // 아이콘('@')은 숫자보다 커서 글자 줄 가운데에 맞춰 위로 올려 그림 (화면 위로는 안 나가게)
@@ -66,7 +68,7 @@ class zzCadencePlusView extends WatchUi.DataField {
     function initialize() {
         DataField.initialize();
         // 업데이트 후에도 설정 화면에 현재 버전이 보이도록 덮어씀
-        Application.Properties.setValue("appVersion", "1.0.2");
+        Application.Properties.setValue("appVersion", "1.0.3");
         readSettings();
     }
 
@@ -98,7 +100,9 @@ class zzCadencePlusView extends WatchUi.DataField {
     // =========================================================
     function onLayout(dc as Graphics.Dc) as Void {
         var w = dc.getWidth(), h = dc.getHeight();
-        _wide = w > System.getDeviceSettings().screenWidth * 0.75f;
+        var sw = System.getDeviceSettings().screenWidth;
+        _wide = w > sw * 0.75f;
+        _big = (sw >= 480);
         _L = (w * 0.05f + 0.5f).toNumber();
         _T = (h * 0.05f + 0.5f).toNumber();
         _R = w - _L;
@@ -224,8 +228,7 @@ class zzCadencePlusView extends WatchUi.DataField {
         var sys = getBackgroundColor();
         var sysClear = (sys == Graphics.COLOR_TRANSPARENT);   // 기기가 "투명"이라고 알려준 경우
         var night = (sys == Graphics.COLOR_BLACK || sysClear);
-        var soft = (_bgMode == BG_AUTO)
-                && (System.getDeviceSettings().screenWidth >= 480);   // 1050 / 1060
+        var soft = (_bgMode == BG_AUTO) && _big;   // _big = 1050 / 1060
         var fg = night ? Graphics.COLOR_WHITE
                        : (soft ? 0x313152 : Graphics.COLOR_BLACK);
         var bg = night ? (soft ? 0x17181D : Graphics.COLOR_BLACK)

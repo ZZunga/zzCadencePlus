@@ -1,5 +1,5 @@
 <properties>
-    <property id="appVersion" type="string">1.0.2</property>
+    <property id="appVersion" type="string">1.0.3</property>
     <property id="mode" type="number">1</property>
     <property id="dayHighColor" type="number">1</property>
     <property id="dayLowColor" type="number">8</property>
