@@ -33,7 +33,7 @@ class zzCadencePlusView extends WatchUi.DataField {
     //          1 기기가 알려준 검정·흰색 그대로 (기본, 지금까지의 동작)
     //          2 투명 - 칠하지 않아 기기 배경이 그대로 비친다
     enum { BG_AUTO, BG_PLAIN, BG_CLEAR }
-    private var _bgMode as Number = BG_PLAIN;
+    private var _bgMode as Number = BG_AUTO;
     private var _state as Number = STATE_NORMAL;
 
     // ---- 레이아웃 ----
@@ -76,7 +76,7 @@ class zzCadencePlusView extends WatchUi.DataField {
     function readSettings() as Void {
         // 배경색 : 0 기기 화면색에 맞춤, 1 검정·흰색 그대로(기본), 2 투명
         var bm = Application.Properties.getValue("bgMode");
-        _bgMode = (bm instanceof Number && bm >= 0 && bm <= 2) ? bm as Number : BG_PLAIN;
+        _bgMode = (bm instanceof Number && bm >= 0 && bm <= 2) ? bm as Number : BG_AUTO;
 
         var m = Application.Properties.getValue("mode");
         _mode = (m instanceof Number && m >= 0 && m <= 3) ? m : MODE_AVG;
